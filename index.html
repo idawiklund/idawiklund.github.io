@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+    <meta name="keywords" content="Ida Wiklund, Portfolio, Interaction Design Student">
+    <meta name="description" content="A portfolio page with works and projects created by Ida Wiklund. Ida is a MSc student in Interaction Design, at Umeå University.">
+    <meta name="author" content="Ida Wiklund, iwi0702@gmail.com">
+    <meta property="og:title" content="Ida Wiklund Portfolio" />
+    <meta property="og:type" content="Portfolio" />
+    <meta property="og:image" content="./Portfolio/images/Game.PNG, ./Portfolio/images/Radio.PNG, ./Portfolio/images/katt.jpg, ./Portfolio/images/Snapchat.jpg" />
+    <meta property="og:site_name" content="Ida Wiklund Portfolio" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Start Index</title>
+	<link href="./stilmall.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="javascript.js"></script>
+</head>
+
+<body onload = "changeProfileImage()">
+	<nav id="topNav" class="nav">
+		<ul>
+			<li class="li1"><a href="javascript:void(0);" class="icon" onclick="navFunction()">&#9776;</a></li>
+			<li class="li2"><a href="#top" class="active"><h3>Home</h3></a></li>
+			<li class="li3">
+				<a href="#workAndProjects" class="other"><h3>Work and Projects</h3></a>
+				<div id="hideInMenuDiv">
+					<a href="./game.html" class="hideInMenu"><h5>Anti-Tower Defence Game</h5></a>
+					<a href="./radio.html" class="hideInMenu"><h5>Radio Application</h5></a>
+					<a href="./interrogation.html" class="hideInMenu"><h5>The Interrogation</h5></a>
+					<a href="./course-system.html" class="hideInMenu"><h5>Course Report System</h5></a>
+				</div>
+			</li>
+			<li class="li4"><a href="#AboutMe" class="other"><h3>About Me</h3></a></li>
+			<li class="li5"><a href="#Contact" class="other"><h3>Contact</h3></a></li>
+		</ul>
+	</nav>
+	<article>
+		<div id="imageText">
+			<h2>Ida Wiklund</h2>
+			<h2>MSc Student in Interaction Design,</h2>
+			<h2>at Umeå University</h2>
+		</div>
+		<div id="workAndProjects" class="changeMargin">
+			<h2>Work and Projects</h2>
+			<div class="GridContainer">
+				<div class="Game">
+					<div class="GameIm">
+						<img id="GameImage" src="./Portfolio/images/Game.PNG" alt="Image of game">
+					</div>
+					<div class="GameText">
+						<h4>Anti-Tower Defence Game</h4>
+						<p>A project where me and three others worked together and developed an "Anti-Tower Defense" game. A game where you send out the troops and the game try to shoot them down with its towers. The game is completely made up in Java, with home made images.</p>
+						<a href="./game.html" class="projects"><h5>Read more about the project here</h5></a>
+					</div>
+				</div>
+
+				<div class="Radio">
+					<div class="RadioIm">
+						<h4>Tableaux for Sveriges Radio</h4>
+						<img id="RadioImage" src="./Portfolio/images/Radio.PNG" alt="Image of radio application">
+					</div>
+					<div class="RadioText">
+						<p>An application created by me that gets and displays information about the tableaux of Sveriges Radio. The radio application is completely made up in Java and it uses the API of Sveriges Radio to provide the user with information about the tableaux.</p>
+						<a href="./radio.html" class="projects"><h5>Read more about the project here</h5></a>
+					</div>
+				</div>
+
+				<div class="Interrogation">
+					<h4>The Interrogation</h4>
+					<p>A recording of me and an another student. We acted as a interrogator and a suspect and then edited the file to get the desired effects.</p>
+					<a href="./interrogation.html" class="projects"><h5>Read more about the project here</h5></a>
+				</div>
+
+				<div class="Course">
+					<h4>Designing the course report system</h4>
+					<p>A project where me and two other students worked together and made a design proposal for the course report system at Umeå University. The prototypes are made up in the Adobe programs Photoshop, Illustrator and XD.</p>
+					<a href="./course-system.html" class="projects"><h5>Read more about the project here</h5></a>
+				</div>
+			</div>
+		</div>	
+	
+		<div id="AboutMe">
+			<h2>About Me</h2>
+			<div class="AboutMeContainer">
+				<div class="AboutMeContent"> <!--class="changeMargin"-->
+					<div class="AboutMeIm">
+						<img id="AboutMeImage" src="./Portfolio/images/katt2.jpg" alt="Image on me" height="210" width="350">
+					</div>
+					<div class="AboutMeText1">
+						<h4 class="just">I am currently a MSc student in Interaction Design, at Umeå University. This means that I am currently learning how to find creative and interactive solutions between human and machine. After the studies, I am aiming to work with both front-end and back-end development at some point. I think all kinds of programing is interesting.</h4>
+					</div>
+					<div class="AboutMeText2">
+						<p>I am from a small town in the northern of Sweden called Skellefteå and moved to Umeå to study. When I started studying, I traveled from Skellefteå in 2,5 years. I studied some extra courses and worked a little in the daycare as well. In my spare time I cuddle with my cats, train, sing and hang out with friends and family. One of my biggest hobbies is to sing and it is also one of my most important tools to unwind. I also like to play football, but I do not play very often since I stopped playing in Bureå's women's team as a 17 year old. When it comes to programming, I like to learn new things and challenge myself. I have noticed that the more I learn, the more fun it gets, and being able to connect programming with design is even better. In the future I would like to work as a programmer and also connect it with some kind of designing.</p><br>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div id="Contact">
+			<div id="ContactContent" class="changeMargin">
+				<h2>Contact</h2>
+				<br><br>
+				<div>
+					<img id="ContactImage" src="./Portfolio/images/contacts.png" alt="Image of contact information">
+				</div>
+				<!--<h4>My telephone number: 076 80 22 875</h4>
+				<h4>My e-mail: iwi0702@gmail.com</h4>-->
+				<br>
+			</div>
+		</div>
+	</article>
+	<footer>
+		<h4>2019 by Ida Wiklund</h4>
+	</footer>
+</body>
+</html>
